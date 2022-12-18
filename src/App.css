@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'ONE-Mobile-Title';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ONE-Mobile-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ONE-Mobile-Title';
+}
+
+*::-webkit-scrollbar {
+  /*모든 구역 스크롤바 없애기*/
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+}
+
+a:disabled {
+  cursor: not-allowed;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+/*header css*/
+
+nav {
+  width: 100%;
+  height: 50px;
+  font-family: 'ONE-Mobile-Regular';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #01a3df;
+  color: #fff;
+  padding: 0px 250px 0px 250px;
+  position: fixed;
+  z-index: 1;
+}
+nav span{
+  color: #fff;
+  font-size: 20px;
+  font-family: 'ONE-Mobile-Title';
+}
+.nav_box {
+  flex: 1;
+  text-align: right;
+  margin-top: 20px;
+}
+
+
+.nav_box ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav_box ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav_box ul li::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.nav_box ul li:hover::after {
+  width: 100%;
+}
+
+/*footer css*/
+.footer {
+  /* position: absolute; */
+  width: 100%;
+  height: 500px;
+  background-color: #01a3df;
+  padding-top: 70px;
+  margin: 0px auto;
+}
+
+.footer_top {
+  margin: 0px auto;
+  width: 80%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.footer_img {
+  width: 70px;
+}
+
+.footer_top_title {
+  padding-top: 15px;
+  font-weight: bold;
+  font-family: 'ONE-Mobile-Title';
+  color: #f2f2f2;
+}
+
+.footer_top_info {
+  font-size: 12px;
+  font-family: 'ONE-Mobile-Title';
+  color: #f2f2f2;
+}
+
+.footer_bottom {
+  padding-top: 50px;
+  margin: 0px auto;
+}
+
+.icons_border {
+  display: inline;
+  padding: 13px 15px;
+  margin: 40px 10px 0px 10px;
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
+}
+
+.footer_icons {
+  color: #f2f2f2;
+  font-size: 17px;
+}
+
+.icons_border:hover {
+  border: 1px solid #f2f2f2;
+  transition: 0.5s;
+}
+
+.google_play {
+  color: #0083b3;
+  margin-left: 10px;
+}
+
+.google_icon {
+  color: #0083b3;
+}
+
+.app_download {
+  padding: 10px 35px 10px 35px;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  margin: 13px 20px;
+
+}
+
+.app_download:hover {
+  background-color: #b778b8;
+  transition: 0.5s;
+}
+
+.footer_bottom_info {
+  padding-top: 50px;
+  color: #0083b3;
+}
